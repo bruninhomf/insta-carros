@@ -18,9 +18,45 @@ class App extends Component{
 
      const { cars } = this.state;
 
+      function time_convert(num) { 
+        // var num = 790968;
+        var data = new Date(num * 1617494400);
+        var falta = (new Date(data).getTime() - new Date().getTime()) / 1000;
+        var segundos = Math.round(falta % 60);
+        var minutos = Math.round(falta / 60 % 60);
+        var horas = Math.round(falta / 60 / 60 % 24);
+        var dias = Math.round(falta / 60 / 60 / 24);
+        var divs = document.querySelectorAll('#parcelas span');
+
+        setInterval(function () {
+        if (segundos == 0) {
+            segundos = 60;
+            minutos--;
+        }
+        if (minutos == 0) {
+            minutos = 60;
+            horas--;
+        }
+        if (horas == 0) {
+            horas = 24;
+            dias--;
+        }
+        segundos--;
+        // var contador = [horas, minutos, segundos].forEach(function (parcela, i) {
+        //     divs[i].innerHTML = parcela;
+        // });
+        var contador = horas + ':' + minutos + ':' + segundos;
+        
+        return document.getElementById("demo").innerHTML = contador;
+
+        }, 1000);
+      }
+
+      console.log(time_convert(790968))
+
+
     return(
       <div className="container">
-        {console.log(cars)}
         {cars.map(car => (
           <div key="{car.id}" className="card">
             <img src={car.imageUrl} width="300px" className="image"/>
@@ -31,7 +67,12 @@ class App extends Component{
             <div className="group">
               <div className="col-6">
                 <h5 className="title">TEMPO RESTANTE</h5>
-                <h2 className="time divider">{car.remainingTime}</h2>
+                <h2 className="time divider">
+                  <div id="demo"></div>
+                  {console.log(time_convert(car.remainingTime))}
+                  {/* {car.remainingTime} */}
+                  {/* {time_convert(790968)} */}
+                </h2>
               </div>
               <div className="col-6">
                 <h5 className="title">ULTIMA OFERTA</h5>
