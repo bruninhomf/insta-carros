@@ -1,38 +1,198 @@
-.App {
-  text-align: center;
+body {
+    background-color: #ebebeb;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav {
+    background-color: #ffffff; 
+    margin-bottom: 20px;
+    height: 80px;
+    width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-nav {
+    margin: auto;
+    max-width: 960px;
+    padding: 15px 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card-logo {
+    display: inline-block;
+    width: 25%;
+    vertical-align: middle;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+    width: 200px;
+    vertical-align: middle;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-divider {
+    display: inline-block;
+    vertical-align: middle;
+    width: 5%;
+    height: 40px;
+}
+
+.card-phone {
+    display: inline-block;
+    width: 40%;
+    vertical-align: middle;
+}
+
+.logo-phone {    
+    display: inline-block;
+    vertical-align: middle;
+    width: 32px;
+    padding-left: 60px;
+}
+
+.phone {
+    margin: 0px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+    color: #4d5156;
+}
+
+.card-user {
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.caret {
+    padding-left: 20px;
+    vertical-align: top;
+}
+
+.user-group {
+    display: inline-block;
+    text-align: center;
+}
+
+.user-name {
+    margin: 0;
+    color: #4d5156;
+}
+
+.container {
+    margin: auto;
+    max-width: 960px;
+}
+
+.details {
+    position: absolute;
+    padding: 2px 0px;
+    height: 21px;
+    width: 300px;
+    background: black;
+    opacity: 0.7;
+    text-align: center;
+    margin-top: -31px;
+}
+
+.details a {
+    text-decoration: none;
+    color: white;
+}
+
+.details a:hover {
+    text-decoration: none;
+    color: gray;
+}
+
+.card {
+    background-color: #ffffff;
+    width: 300px;
+    display: inline-block;
+    border-top: 2px solid #e4e4e4;
+    border-radius: 5px;
+    margin: 10px 10px;
+}
+
+.image {
+    border-radius: 5px 5px 0px 0px;
+}
+
+.group {
+    border-bottom: 2px solid #e4e4e4;
+    margin: 0px 10px;
+}
+
+.group-2 {
+    border-style: solid;
+    border-color: #e4e4e4;
+    border-width: 2px 0px;
+    margin: 0px 10px;
+}
+
+.title {
+    font-size: 10px;
+    color: #4d5156;
+    font-weight: 600;
+}
+
+.time {
+    color: #ff6d4a;
+    font-weight: 900;
+}
+
+.offer {
+    color: #3eb871;
+    font-weight: 900;
+}
+
+.col-12 {
+    padding: 15px 10px ;
+}
+
+.col-6 {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+
+.divider {
+    border-style: solid;
+    border-color: #e4e4e4;
+    border-width: 0px 2px 0px 0px;
+}
+
+.info {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.description {
+    margin: 4px 0px;
+    padding: 6px 0px;
+    color: #4d5156;
+    font-weight: 600;
+}
+
+.btn {
+    background-color: #3eb871; 
+    color: #ffffff; 
+    border-radius: 5px;
+    text-align: center;
+    padding: 6px 83px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #51a674; 
+    color: #ffffff; 
+    border-radius: 5px;
+    text-align: center;
+    padding: 6px 83px;
+    text-decoration: none;
+}
+
+.card-divider .divider {
+    height: 40px;
 }
