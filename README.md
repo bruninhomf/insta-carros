@@ -7,7 +7,7 @@ Use the provided json payload to create the listings view of our custom auction
 platform.
 
 ### Json Fields:
-
+`
 {
 id: string, // Unique identifier of the car.,
 make: string, // Make of the car
@@ -27,6 +27,7 @@ dealership: string, // String representing dealer that made the offer
 createdAt: string, // ISODate representing the date of the request
 channel: string, // Either ‘Web’ or ‘Mobile’
 }
+`
 
 ### Acceptance Criteria:
 - Develop the provided solution using ReactJS. create-react-app is the preferred
